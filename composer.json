@@ -18,7 +18,11 @@
         "fzaninotto/faker": "^1.4",
         "mockery/mockery": "^1.0",
         "nunomaduro/collision": "^3.0",
-        "phpunit/phpunit": "^8.0"
+        "phpunit/php-code-coverage": "^7.0",
+        "phpunit/phpcov": "^6.0",
+        "phpunit/phpunit": "^8.0",
+        "sensiolabs/security-checker": "^6.0",
+        "squizlabs/php_codesniffer": "*"
     },
     "config": {
         "optimize-autoloader": true,
