@@ -1,5 +1,4 @@
 dist: precise
-
 language: php
 
 php:
@@ -21,4 +20,11 @@ before_script:
   - php artisan migrate --no-interaction -vvv
 
 script:
-  - vendor/bin/phpunit
+  - vendor/bin/phpunit --coverage-text
+  - vendor/bin/phpcs app/FizzBuzzer.php app/User.php
+  - vendor/bin/security-checker security:check
+
+notifications:
+  slack:
+    rooms:
+      - ifts16workspace:5iJkQ3l5dhBtFImJ01PNAtku#seminario
